@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
 }
-
+:root{
+    --primary-color: #353535;
+    --btn-color:#c89979;
+}
 html {
     font-size: 62.5%;
 }
@@ -9,4 +12,153 @@ html {
 body {
     font-size: 1.6rem;
     
+}
+
+/* common */
+/* .content {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+a {
+    text-decoration: none;
+}
+/* header */
+.header .content{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search{
+    
+}
+
+.btn-DN a {
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung thanh nav */
+    background-color: var(--primary-color);
+    border: solid 1px #595757;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 0 15px; 
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1 rem;
+    padding: 10px 14px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: var(--btn-color);
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 50px 10%;
+    color: white;
+    position: relative;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner-content h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--btn-color);
+    color: white;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+/* Nút điều hướng */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }

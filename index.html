@@ -8,6 +8,51 @@
     <link rel="stylesheet" href="./assest/css/reset.css">
 </head>
 <body>
-        <h1> Home page</h1>
+    <main>
+        <!-- Header -->
+        <header class="header">
+            <div class="content">
+                <img src="assest/img/logo-mona-2.png" alt="Ảnh lỗi">
+                <div class="search">
+                    <input type="search" name="s" value placeholder="Tìm kiếm" autocomplete="off">
+                </div>
+                <div class="btn-DN"><a href="#!">ĐĂNG NHẬP</a></div>
+            </div>
+        </header>
+        <!-- Navigation -->
+         <nav class="nav">
+            <ul>
+                <li><a href="#!">TRANG CHỦ</a></li>
+                <li><a href="#!">GIỚI THIỆU</a></li>
+                <li><a href="#!">ĐỒNG HỒ NAM</a></li>
+                <li><a href="#!">ĐỒNG HỒ NỮ</a></li>
+                <li><a href="#!">BLOGS</a></li>
+                <li><a href="#!">LIÊN HỆ</a></li>
+            </ul>
+         </nav>
+         <!-- banner -->
+         <section class="banner">
+            <div class="banner-content">
+                <h4>Mona Watch</h4>
+                <h1>Đồng hồ Classico</h1>
+                <p>
+                    Cùng với sự phát triển không ngừng của thời trang thế giới, rất nhiều thương hiệu cho ra đời những mẫu đồng hồ nam chính hãng đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ...
+                </p>
+                <a href="#!" class="btn">XEM SẢN PHẨM</a>
+            </div>
+        
+            <div class="slider">
+                <div class="slides">
+                    <img src="assest/img/img-banner1.png" alt="Đồng hồ 1">
+                    <img src="assest/img/img-banner2.png" alt="Đồng hồ 2">
+                    <img src="assest/img/img-banner3.png" alt="Đồng hồ 3">
+                </div>
+                <!-- Nút điều hướng -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <script src="assest/js/index.js"></script>
 </body>
 </html>
