@@ -13,5 +13,20 @@ function changeSlide(direction) {
         currentIndex = 0;
     }
 
-    slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+    slides.style.transform = `translateX(${-currentIndex * 100}vw)`;
 }
+// sanpham
+const container = document.querySelector('.product-container');
+const nextBtn = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
+
+function slide(direction) {
+    if (direction === "next") {
+        container.appendChild(container.firstElementChild);
+    } else {
+        container.prepend(container.lastElementChild);
+    }
+}
+
+nextBtn.addEventListener("click", () => slide("next"));
+prevBtn.addEventListener("click", () => slide("prev"));
