@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: #fff;
+}
+
+.intro .content {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    gap: 20px;
+}
+
+.watch-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text {
+    max-width: 600px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột mỗi hàng */
+    gap: 20px;
+    padding: 50px;
+    background: #fff;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    font-size: 32px;
+    margin-right: 15px;
+    color: #333;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #555;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    background: #fff;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 300px;
+}
+
+.testimonial img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 5rem;
+    
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: #c59b78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #a47d5d;
+}
