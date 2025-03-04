@@ -16,9 +16,9 @@ function changeSlide(direction) {
     slides.style.transform = `translateX(${-currentIndex * 100}vw)`;
 }
 // sanpham
-const container = document.querySelector('.product-container');
-const nextBtn = document.getElementById('next');
-const prevBtn = document.getElementById('prev');
+const container = document.querySelector(".product-container");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
 
 function slide(direction) {
     if (direction === "next") {

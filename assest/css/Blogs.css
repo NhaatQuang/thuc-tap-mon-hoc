@@ -1,0 +1,42 @@
+.blog-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.search-box input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.search-box button {
+    background-color: #c97e4b;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+}
+.search-box button:hover {
+    color: #ccc;
+}
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+.post-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.post-list img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

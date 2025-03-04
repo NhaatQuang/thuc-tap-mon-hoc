@@ -1,9 +1,9 @@
 * {
     box-sizing: border-box;
 }
-:root{
+:root {
     --primary-color: #353535;
-    --btn-color:#c89979;
+    --btn-color: #c89979;
 }
 html {
     font-size: 62.5%;
@@ -11,7 +11,6 @@ html {
 
 body {
     font-size: 1.6rem;
-    
 }
 
 /* common */
@@ -25,15 +24,14 @@ a {
     color: var(--btn-color);
 }
 /* header */
-.header .content{
+.header .content {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.search{
-    
+.search {
 }
 
 .btn-DN a {
@@ -42,7 +40,7 @@ a {
 
 .nav {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     background-color: var(--primary-color);
     border: solid 1px #595757;
     width: 100%;
@@ -50,7 +48,7 @@ a {
 
 .nav ul {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     list-style: none;
     padding: 10px 0;
@@ -58,7 +56,7 @@ a {
 }
 
 .nav ul li {
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 .nav ul li a {
@@ -138,7 +136,8 @@ a {
     color: white;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -152,7 +151,8 @@ a {
     transition: opacity 0.3s;
 }
 
-.slider:hover .prev, .slider:hover .next {
+.slider:hover .prev,
+.slider:hover .next {
     opacity: 1;
 }
 
@@ -170,10 +170,9 @@ a {
     margin-left: 2rem;
 }
 
-.main-content h2{
+.main-content h2 {
     font-size: 2rem;
     font-weight: 700;
-    
 }
 /*  */
 /* Section tổng */
@@ -187,13 +186,13 @@ a {
     position: relative;
     display: block;
     overflow: hidden;
-    height: 250px; 
+    height: 250px;
 }
 
 .banner-link img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -210,11 +209,10 @@ a {
     color: white;
     font-weight: bold;
 }
-.title{
+.title {
     font-size: larger;
     font-weight: 900;
     margin: 1rem;
-
 }
 
 /* Sản phẩm */
@@ -227,10 +225,9 @@ a {
 
 .product-container {
     display: flex;
-    gap: 5px; 
+    gap: 5px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .product {
@@ -239,7 +236,6 @@ a {
     border: 1px solid #ddd;
     text-align: center;
     min-width: 200px;
-
 }
 .product:hover {
     transform: scale(1.05);
@@ -281,7 +277,8 @@ a {
 }
 
 /* NÚT ĐIỀU HƯỚNG */
-#prev, #next {
+#prev,
+#next {
     background: var(--btn-color);
     color: white;
     border: none;
@@ -334,9 +331,8 @@ a {
     background: #564337;
 }
 
-
 /* footer */
-.myfooter{
+.myfooter {
     background-color: var(--primary-color);
     line-height: 2rem;
 }
@@ -344,10 +340,8 @@ a {
 .myfooter a {
     color: white;
     text-decoration: none;
-    
 }
 
 .myfooter a:hover {
     color: var(--btn-color);
-
 }

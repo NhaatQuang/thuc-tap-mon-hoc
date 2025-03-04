@@ -1,0 +1,29 @@
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.icon-box i {
+    color: #c97e4b;
+    font-size: 1.5rem;
+}
+.btn-submit {
+    background-color: #c97e4b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 1.1rem;
+}
+.map-container iframe {
+    width: 450px;
+    height: 450px;
+    border: 0;
+}
