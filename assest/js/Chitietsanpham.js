@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const mainImg = document.getElementById("main-img");
     const thumbnails = document.querySelectorAll(".thumbnail");
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev-img");
+    const nextBtn = document.querySelector(".next-img");
     const tabButtons = document.querySelectorAll(".tab-btn");
     const tabContents = document.querySelectorAll(".tab-content");
     const addToCartBtn = document.querySelector(".add-to-cart");
@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Hiệu ứng hover cho nút Thêm vào giỏ hàng
-    addToCartBtn.addEventListener("mouseover", () => {
-        addToCartBtn.style.backgroundColor = "#c45a00";
-    });
-    addToCartBtn.addEventListener("mouseout", () => {
-        addToCartBtn.style.backgroundColor = "#d77a00";
-    });
+    // addToCartBtn.addEventListener("mouseover", () => {
+    //     addToCartBtn.style.backgroundColor = "#c45a00";
+    // });
+    // addToCartBtn.addEventListener("mouseout", () => {
+    //     addToCartBtn.style.backgroundColor = "#d77a00";
+    // });
 });

@@ -276,6 +276,10 @@ a {
     margin-top: 10px;
 }
 
+.add-to-cart:hover {
+    background: #564337;
+}
+
 /* NÚT ĐIỀU HƯỚNG */
 #prev,
 #next {
@@ -316,19 +320,6 @@ a {
 .price {
     font-size: 18px;
     color: #e74c3c;
-}
-
-.add-to-cart {
-    background: var(--btn-color);
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.add-to-cart:hover {
-    background: #564337;
 }
 
 /* footer */
