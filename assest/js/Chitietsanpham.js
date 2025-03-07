@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = document.querySelector(".next-img");
     const tabButtons = document.querySelectorAll(".tab-btn");
     const tabContents = document.querySelectorAll(".tab-content");
-    const addToCartBtn = document.querySelector(".add-to-cart");
+
+    const quantityInput = document.querySelector(".quantity-input");
+    const increaseBtn = document.querySelector(".increase");
+    const decreaseBtn = document.querySelector(".decrease");
 
     let currentIndex = 0;
     const imageSources = Array.from(thumbnails).map((img) => img.src);
@@ -39,18 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
             tabButtons.forEach((btn) => btn.classList.remove("active"));
             button.classList.add("active");
 
-            tabContents.forEach((content) => content.classList.add("hidden"));
-            document
-                .getElementById(button.dataset.tab)
-                .classList.remove("hidden");
+            tabContents.forEach((content) =>
+                content.classList.remove("active")
+            );
+            document.getElementById(button.dataset.tab).classList.add("active");
         });
     });
 
-    // Hiệu ứng hover cho nút Thêm vào giỏ hàng
-    // addToCartBtn.addEventListener("mouseover", () => {
-    //     addToCartBtn.style.backgroundColor = "#c45a00";
-    // });
-    // addToCartBtn.addEventListener("mouseout", () => {
-    //     addToCartBtn.style.backgroundColor = "#d77a00";
-    // });
+    // Xử lý tăng/giảm số lượng sản phẩm
+    increaseBtn.addEventListener("click", () => {
+        let currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+    });
+
+    decreaseBtn.addEventListener("click", () => {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
 });

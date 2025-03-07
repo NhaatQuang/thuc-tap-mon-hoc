@@ -1,9 +1,10 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
-}
+} */
+
 :root {
     --primary-color: #353535;
     --btn-color: #c89979;
@@ -37,24 +38,24 @@ body {
     object-fit: cover;
 }
 
-button.prev-img, button.next-img {
+button.prev-img,
+button.next-img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* background: rgba(28, 26, 26, 0.5); */
-    /* color: rgb(158, 26, 26); */
     border: none;
     padding: 10px;
     cursor: pointer;
 }
 
-button.prev-img { left: 10px; }
-button.next-img { right: 10px; }
-
-button.prev-img:hover {
-    color: var(--btn-color);
+button.prev-img {
+    left: 10px;
+}
+button.next-img {
+    right: 10px;
 }
 
+button.prev-img:hover,
 button.next-img:hover {
     color: var(--btn-color);
 }
@@ -87,8 +88,6 @@ button.next-img:hover {
     color: #c97e4b;
 }
 
-
-
 .tabs {
     margin-top: 20px;
 }
@@ -113,4 +112,85 @@ button.next-img:hover {
 
 .tab-content.active {
     display: block;
+}
+/* đánh giá */
+
+.review-form {
+    border: 1px solid #c97e4b;
+    padding: 15px;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.rating .star:hover,
+.rating .star:hover ~ .star {
+    color: #f4b400;
+}
+
+.review-inputs {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.review-inputs input {
+    width: 48%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.submit-review {
+    background: #c97e4b;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Thêm style cho phần nhập số lượng */
+.product-purchase {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.quantity-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity-btn:hover {
+    background-color: #ddd;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    padding: 8px;
+    background: white;
+    outline: none;
 }
