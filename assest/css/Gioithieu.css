@@ -10,6 +10,11 @@ body {
     line-height: 1.6;
 }
 
+/* .search button i {
+    color: white;
+    font-size: 14px;
+} */
+
 .intro {
     display: flex;
     align-items: center;
