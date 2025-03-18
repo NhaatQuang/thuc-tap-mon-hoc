@@ -391,6 +391,10 @@ a {
 }
 
 /* footer */
+.col-md-3 h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
 .myfooter {
     background-color: var(--primary-color);
     line-height: 2rem;
