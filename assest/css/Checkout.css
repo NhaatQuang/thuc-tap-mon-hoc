@@ -1,3 +1,6 @@
+html {
+    font-size: 1.6rem;
+}
 .checkout-container {
     display: flex;
     justify-content: space-between;
@@ -26,6 +29,7 @@ h2 {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 1.6rem;
 }
 
 .input-group input,
@@ -35,6 +39,7 @@ h2 {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1.6rem;
 }
 
 textarea {
@@ -43,11 +48,13 @@ textarea {
 
 .checkbox-group {
     margin-bottom: 10px;
+    font-size: 1.6rem;
 }
 
 .order-summary table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 1.6rem;
 }
 
 .order-summary table th,
@@ -57,9 +64,15 @@ textarea {
     text-align: left;
 }
 
+.payment-methods {
+    padding: 10px 0;
+}
+
 .payment-methods label {
     display: block;
     margin: 5px 0;
+    font-size: 1.6rem;
+    padding: 10px 0;
 }
 
 .order-btn {
